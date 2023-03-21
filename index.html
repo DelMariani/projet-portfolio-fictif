@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <title>Portfolio Bootstrap</title>
+    </head>
+
+    <body>
+
+    <!--header : navbar avec ancres + img-->
+        <header> 
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#qui-suis-je">Julie Amandier</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#qui-suis-je">A propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mes-competence">Compétences</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mes-realisations">Réalisations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div> <!--items nav-->
+                </div> <!--container-fluid-->
+            </nav>
+            
+            <div>        
+                <img src="img/social-media.jpg" class="img-fluid" alt="image femme">
+            </div>
+
+        </header>
+
+        <main>
+            <section class="container">
+                <div class="row justify-content-around align-items-center py-3">
+                    <img src="img/development.png" class="img-fluid col-lg-6" alt="devworker">
+                    
+                    <div class="card col-lg-6 border-0" style="width: 30rem;">
+                        <div class="card-body">
+                            <h2 class="card-title text-info" id="qui-suis-je">Qui suis-je</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolorem modi, voluptatem voluptates temporibus ab incidunt optio sequi laboriosam dignissimos eligendi aperiam recusandae repudiandae ratione adipisci, officiis necessitatibus velit porro.</p>
+                            <p class="card-text">Enim, incidunt ullam fuga maxime nostrum porro consectetur nulla vero quasi, quia temporibus! Consequuntur, dolorem deleniti? Provident fugiat perspiciatis dolorum inventore dolores recusandae iusto molestiae, sapiente nemo ad ipsa necessitatibus?</p>
+                            <a href="img/CV.pdf" download="img/CV.pdf" class="btn btn-primary">Télécharger mon CV</a>
+                        </div> 
+                    </div><!--fermeture carte qui suis je-->
+                </div><!--fermeture row-->     
+            </section><!--fermeture container-->
+
+            <section>
+                <div class="container">
+                <h2 class="text-info text-center m-5" id="mes-competences">Mes compétences</h2>
+                    <div class="row d-flex justify-content-evenly pb-5">
+                        <div class="col-lg-4 col-sm-12">
+                            <h3>Front</h3>
+
+                            <p class="m-0">HTML/CSS</p>
+                            <div class="progress" role="progressbar" aria-label="html-css" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-success" style="width: 25%"></div>
+                            </div>
+
+                            <p class="m-0">Javascript</p>
+                            <div class="progress" role="progressbar" aria-label="Javascript" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-info" style="width: 50%"></div>
+                            </div>
+
+                            <p class="m-0">Angular</p>
+                            <div class="progress" role="progressbar" aria-label="angular" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-warning" style="width: 75%"></div>
+                            </div>
+
+                            <p class="m-0">Bootstrap</p>
+                            <div class="progress" role="progressbar" aria-label="bootstrap" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 100%"></div>
+                            </div>
+
+                        </div> <!--fermeture colonne 1-->
+                        
+                        <div class="col-lg-4 col-sm-12">
+                            <h3>Back</h3>
+
+                            <p class="m-0">PHP</p>
+                            <div class="progress" role="progressbar" aria-label="php" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-success" style="width: 25%"></div>
+                            </div>
+
+                            <p class="m-0">SQL</p>
+                            <div class="progress" role="progressbar" aria-label="sql" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-info" style="width: 50%"></div>
+                            </div>
+
+                            <p class="m-0">Symphony</p>
+                            <div class="progress" role="progressbar" aria-label="symphony" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-warning" style="width: 75%"></div>
+                            </div>
+
+                            <p class="m-0">NodeJS</p>
+                            <div class="progress" role="progressbar" aria-label="nodejs" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 100%"></div>
+                            </div>
+                        </div><!--fermeture colonne 2-->
+                    </div> <!--fermeture ligne-->
+                </div> <!--fermeture container-->
+            </section> 
+
+            <section class="bg-light">
+                <div class="container">
+                    <h2 class="text-info text-center m-5" id="mes-realisations">Mes réalisations</h2>
+                    <div class="row justify-content-around pb-5">
+                        <div class="card col-lg-2 col-sm-12 px-3 m-2" style="width: 18rem;">
+                            <img src="img/store.png" class="card-img-top" alt="cloud store">
+                            <div class="card-body">
+                            <h5 class="card-title">Site prestashop</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Voir le site</a>
+                            </div>
+                        </div>
+                        <div class="card col-lg-2 col-sm-12 px-3 m-2" style="width: 18rem;">
+                            <img src="img/store.png" class="card-img-top" alt="cloud store">
+                            <div class="card-body">
+                            <h5 class="card-title">Site prestashop</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Voir le site</a>
+                            </div>
+                        </div>
+                        <div class="card col-lg-2 col-sm-12 px-3 m-2" style="width: 18rem;">
+                            <img src="img/store.png" class="card-img-top" alt="cloud store">
+                            <div class="card-body">
+                            <h5 class="card-title">Site prestashop</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Voir le site</a>
+                            </div>
+                        </div>
+                        <div class="card col-lg-2 col-sm-12 px-3 m-2" style="width: 18rem;">
+                            <img src="img/store.png" class="card-img-top" alt="cloud store">
+                            <div class="card-body">
+                            <h5 class="card-title">Site prestashop</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Voir le site</a>
+                            </div>
+                        </div>
+                    </div> <!--fermeture ligne-->
+                </div><!--fermeture container-->
+            </section>
+        </main>
+
+        <div class="container">
+            <div class="row my-5">
+            <h2 class="text-info text-center">Me contacter</h2>
+                <form action="#" method="post" id="contact">
+                    <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="name" required>
+                    </div>
+
+                    <div class="mb-3">
+                    <label for="firstname" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" id="firstname">
+                    </div>
+                    
+                    <div class="mb-3">
+                    <label for="object" class="form-label">Objet</label> 
+                    <select class="form-select" aria-label="Default select example" id="object">
+                        <option selected>Demande de renseignements</option>
+                        <option value="1">Prise de contact</option>
+                        <option value="2">Autres</option>
+                    </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Textarea" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="Textarea" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div><!--fermeture ligne-->
+        </div><!--fermeture container-->
+
+        <footer>
+                <div class="blog-footer bg-secondary text-primary d-flex justify-content-center align-items-center p-5">
+                    <div class="p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                    </div>
+                    <div class="p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                    </div>
+                    <div class="p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                    </div>
+                </div>
+        </footer>
+
+    </body>
+</html>
